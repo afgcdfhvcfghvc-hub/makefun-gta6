@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solmar Vice: Port of Thieves</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="game" aria-label="Solmar Vice: explore the coastal city of Puerto Solmar on foot and by car"></canvas>
+
+<div id="start-screen" class="overlay">
+  <div class="panel">
+    <h1 class="logo">SOLMAR <span>VICE</span></h1>
+    <p class="tagline">Port of Thieves — an original open-world crime story in the sun-soaked city of Puerto Solmar.</p>
+    <p class="story">You are <b>Rico Marín</b>, a dock runner fresh off the boat. Work for harbour fixer
+    <b>La Gata</b>, steal rides, dodge the Policía Portuaria, and build your name from the marina to the old town.</p>
+    <div class="controls">
+      <div><b>W A S D / Arrows</b> — walk &amp; drive</div>
+      <div><b>Shift</b> — run / boost steering grip</div>
+      <div><b>E</b> — enter / exit a car (walk up to any parked car to steal it)</div>
+      <div><b>Mouse</b> — aim &nbsp;•&nbsp; <b>Click</b> — shoot &nbsp;•&nbsp; <b>F</b> — melee</div>
+      <div><b>Space</b> — handbrake &nbsp;•&nbsp; <b>P / Esc</b> — pause &nbsp;•&nbsp; <b>M</b> — mute</div>
+    </div>
+    <button id="btn-new" class="big-btn">NEW GAME</button>
+    <button id="btn-continue" class="big-btn alt">CONTINUE (saved game)</button>
+    <p class="hint">Sound starts when you press a button. Progress saves automatically.</p>
+  </div>
+</div>
+
+<div id="pause-screen" class="overlay hidden">
+  <div class="panel small">
+    <h2>PAUSED</h2>
+    <button id="btn-resume" class="big-btn">RESUME</button>
+    <button id="btn-restart" class="big-btn alt">RESTART STORY</button>
+  </div>
+</div>
+
+<div id="end-screen" class="overlay hidden">
+  <div class="panel small">
+    <h2 id="end-title">WASTED</h2>
+    <p id="end-text">You wake up at Clínica del Mar. The bill ate some of your cash.</p>
+    <button id="btn-again" class="big-btn">CONTINUE</button>
+  </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
